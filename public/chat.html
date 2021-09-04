@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+
+
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+
+  <style>
+    * { margin: 0; padding: 0; }
+
+    .chatContainer {
+      max-height: 450px;
+      overflow: hidden;
+      overflow-y: scroll;
+    }
+  </style>
+
+</head>
+<body>
+
+  <h2 class="alertMsg" ></h2>
+
+  <div class="container col-md-6 bg-light shadow mt-5" >
+    <h2 class="text-center" >Stranger Chat</h2>
+
+    <div class="chatContainer col-md-10 offset-md-1">
+
+      <!--<div style="background:#45B39D;" class="rounded" >
+        <div class="d-flex justify-content-between p-1" >
+          <p>Name</p>
+          <p id="time"></p>
+         </div>
+         <p class="pl-1">this is a message</p>
+      </div>-->
+    
+    </div>
+
+      <form autocomplete="off" >
+        <div style="background: #fff;" class="form-group col-md-10 offset-md-1 p-3 d-flex" >
+          <input id="msg" class="form-control rounded-pill bg-light shadow-none" 
+           placeholder="Type a message here..." 
+          />
+          <button style="background: #45B39D;" class="btn ml-2 rounded-circle" >+</button>
+        </div>
+      </form>
+    </div>
+
+  </div>
+
+
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="/main.js"></script>
+
+</body> 
+</html>
